@@ -1,4 +1,4 @@
-fn main(){}
+fn main(){
    
    println!("Welcome to Rust Programming!");
 

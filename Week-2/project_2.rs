@@ -7,7 +7,7 @@ fn main() {
 
    // sum
    let s = (2.0 * t) + (1.0 * m) + (3.0 * h) + (3.0 * d) + (1.0 * a);
-   println!("sum is {}"; s);
+   println!("sum is {}", s);
 
    // average sales
    let av = s / 10.0;
