@@ -16,7 +16,7 @@ fn main() {
 
     // division
     let quotient:f32 = 56.7 / 32.2;
-    println!("The division of 56.7 and 32.2 - {}",quotient);
+    println!("The division of 56.7 and 32.2 = {}",quotient);
 
 
     // remainder
