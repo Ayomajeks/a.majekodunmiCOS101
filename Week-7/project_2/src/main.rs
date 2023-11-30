@@ -23,6 +23,7 @@ fn main() {
        io::stdin().read_line(&mut age).expect("Failed to read input");
        let age:i32 = age.trim().parse().expect("Invalid input");
        siblings_info.push_str(&format! ("Age: {}, ", age));
+   }
 
        if age > 18 {
            println!("Is sibling married? yes/no: ");
@@ -34,6 +35,7 @@ fn main() {
             let mut children = String::new();
             io::stdin().read_line(&mut children).expect("Failed to read input");
             siblings_info.push_str(&format! ("Marriage Status: Married, Children: {}, ", children.trim());
+            }    
 
             println!("What city does the family live in: ");
             let mut city = String::new();
@@ -59,7 +61,6 @@ fn main() {
             } else {
                 siblings_info.push_str("Marital Status: Single, Status: Worker");
             }
-        } 
         else {
         println!("Do you have WAEC: ");
         let mut waec = String::new();
