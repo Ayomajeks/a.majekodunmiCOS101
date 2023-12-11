@@ -1,4 +1,3 @@
-use std::fs::File;
 use std::io::Write;
 
 fn main() {
@@ -8,7 +7,13 @@ fn main() {
     let departments = vec!["Accounting", "Economics", "Computer Science", "Electrical Engineering", "Mechanical Engineering"];
     let levels = vec!["300", "100", "200", "200", "100"];
 
-    let mut file = std::fs::File::create("stout.txt").expect("create failed");
+    let mut file = std::fs::File::create("school.txt").expect("create failed");
 
-    file.write_all(format!("----------\n"))
+    file.write_all(format!("{} , {} , {} , {}\n","Name","Matric Number","Department","Level").as_bytes()).expect("write failed");
+
+    for n in 0..student_names.len() {
+        file.write_all(format!("{} , {} , {} , {}\n", student_names[n],matric_numbers[n],departments[n],levels[n]).as_bytes()).expect("write failed");
+    }
+    
+    println!("Student details written in school.txt");    
 }    
